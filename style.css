@@ -1,0 +1,107 @@
+/* --------------------------- GERAL -------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2? family= Outfit:wght@400;700 & display=swap');
+
+:root {
+    --white-color: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+    --size-font: 0.938em;
+}
+
+body {
+    display: flex;
+    background-color: var(--light-gray);
+    justify-content: center;
+}
+
+/* --------------------------- DESKTOP -------------------------------- */
+
+@media screen and (min-width: 1440px) {
+    main#container {
+        background-color: var(--white-color);
+        border-radius: 1em;
+        margin-top: 10em;
+        margin-bottom: 10em;
+        width: 20%;
+        padding-top: 0.8em;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0.8em;
+        width: 90%;
+    }
+
+    h1,
+    p {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Outfit', sans-serif;
+    }
+
+    h1 {
+        color: var(--dark-blue);
+        font-weight: 700;
+    }
+
+    p {
+        color: var(--grayish-blue);
+        font-size: var(--size-font);
+        font-weight: 400;
+        text-align: center;
+        margin: 1em 1.5em 3em 1.5em;
+        word-break: break-all;
+    }
+}
+
+/* --------------------------- TABLET AND MOBILE -------------------------------- */
+
+@media screen and (min-width: 375px) and (max-width: 1439px) {
+    main#container {
+        background-color: var(--white-color);
+        border-radius: 1em;
+        margin-top: 10em;
+        margin-bottom: 10em;
+        width: 42%;
+        padding-top: 0.8em;
+        justify-content: center;
+        text-align: center;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0.8em;
+        width: 90%;
+    }
+
+    h1,
+    p {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-self: center;
+        font-family: 'Outfit', sans-serif;
+    }
+
+    h1 {
+        color: var(--dark-blue);
+        font-weight: 700;
+    }
+
+    p {
+        color: var(--grayish-blue);
+        font-size: var(--size-font);
+        font-weight: 400;
+        text-align: center;
+        margin: 1em 1.5em 3em 1.5em;
+        word-break: break-all;
+    }
+}
